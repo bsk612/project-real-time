@@ -1,6 +1,7 @@
 *ALL DATA IN JSON
 Item properties (name: string, price: int, quantitiy: int)
 Name is unique and has a primary key 
+API is hosted on localhost:3000 (will update when publicly hosted)
 
 Get all Items
 Endpoint:
