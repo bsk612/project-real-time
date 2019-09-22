@@ -1,0 +1,37 @@
+*ALL DATA IN JSON
+Item properties (name: string, price: int, quantitiy: int)
+Name is unique and has a primary key 
+
+Get all Items
+Endpoint:
+GET /items
+No parameters, returns
+Returns 500 if error, array of items if succesful
+
+Create and Item
+Endpoint:
+PUT /item
+Body parameters :name/requried, :price/required, :quantity/required 
+Returns 500 if error, 200 if successful 
+
+Get an Item by :name
+Endpoint:
+GET /item/:name
+Query parameter :name is required
+Returns 404 if not found or 200 if successful, implied object return.
+
+Delete an Item by :name
+Endpoint:
+DELETE /item/:name
+Query parameter :name is required
+Returns 500 if error, 200 if successful
+
+Update an Item by :name
+Endpoint:
+POST /item/:name
+Query parameter :name is required, body parameter :name/required, :price/required, :quantity/required
+Returns 500 if error, 200 if successful
+
+
+
+
